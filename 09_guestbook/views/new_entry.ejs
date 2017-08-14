@@ -1,0 +1,27 @@
+<% include header %>
+
+<h2>Write a new entry</h2>
+
+<div class="row">
+  <form class="col s12" method="POST">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Title" id="title" name="title" type="text" class="validate">
+        <label for="title">Title</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="body" name="body" class="materialize-textarea"></textarea>
+        <label for="body">Body</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input type="submit" class="waves-effect waves-light btn col s6" value="Post Entry">
+      </div>
+    </div>
+  </form>
+</div>
+
+<% include footer %>

@@ -1,0 +1,19 @@
+<% include header %>
+<div class="row">
+  <% if (entries.length) { %>
+    <% entries.forEach( function (entry) { %>
+      <div class="card cyan darken-2">
+        <div class="card-content white-text">
+          <span class="card-title"><%= entry.title %></span>
+          <p><%= entry.body %></p>
+        </div>
+        <div class="card-action right-align">
+          <%= entry.createdAt %>
+        </div>
+      </div>
+    <% }); %>
+  <% } else { %>
+    <p>No entries yet!</p>
+  <% } %>
+</div>
+<% include footer %>
