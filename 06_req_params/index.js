@@ -15,7 +15,7 @@ app.get('/hello/:who', (req, res) => {
 })
 
 app.use( (req, res) => {
-  res.statusCode = 404;
+  res.status(404);
   res.end('404!');
 });
 

@@ -16,7 +16,7 @@ app.get('/about', (req, res) => {
 
 // if any
 app.use( (req, res) => {
-  res.statusCode = 404;
+  res.status(404);
   res.end('404!');
 });
 
