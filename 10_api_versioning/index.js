@@ -4,7 +4,7 @@ const api2 = require('./api2');
 
 const app = express();
 
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use('/v1', api1);
 app.use('/v2', api2);
